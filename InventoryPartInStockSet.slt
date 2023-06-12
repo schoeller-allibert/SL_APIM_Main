@@ -1,0 +1,20 @@
+{
+    "job_class": "PipelineJob",
+    "job_name": "InventoryPartInStockSet",
+    "note": "",
+    "parameters": {
+        "enabled": true,
+        "include_external_urls": true,
+        "job_type": "standard",
+        "pipeline_parameters": {
+            "account": "lib.configIFS.getAccount()",
+            "filter": "HandlingUnitId eq 0",
+            "select": "SerialNo"
+        },
+        "pipeline_path": "IFSInventoryPartInStockSet",
+        "snaplex_path": "GroundPlexDev01"
+    },
+    "schedule": {},
+    "trigger": {},
+    "trigger_type": "ScheduleTrigger"
+}
