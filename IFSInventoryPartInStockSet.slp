@@ -1,0 +1,1138 @@
+{
+    "class_id": "com-snaplogic-pipeline",
+    "class_version": 9,
+    "link_map": {
+        "link105": {
+            "dst_id": "11111111-1111-1111-1111-000000000002",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000000",
+            "src_view_id": "output0"
+        },
+        "link106": {
+            "dst_id": "11111111-1111-1111-1111-000000000003",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000001",
+            "src_view_id": "output0"
+        },
+        "link107": {
+            "dst_id": "11111111-1111-1111-1111-000000000005",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000003",
+            "src_view_id": "output0"
+        },
+        "link109": {
+            "dst_id": "11111111-1111-1111-1111-000000000006",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000004",
+            "src_view_id": "output0"
+        },
+        "link110": {
+            "dst_id": "11111111-1111-1111-1111-000000000004",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000002",
+            "src_view_id": "output0"
+        }
+    },
+    "property_map": {
+        "error": {
+            "error_behavior": {
+                "value": "none"
+            }
+        },
+        "info": {
+            "author": {
+                "value": "snaplogic.admin@schoellerallibert.com"
+            },
+            "label": {},
+            "notes": {
+                "value": "https://www.youtube.com/watch?v=uPj_DWltWiw"
+            },
+            "pipeline_doc_uri": {
+                "value": null
+            },
+            "purpose": {
+                "value": null
+            }
+        },
+        "input": {
+            "11111111-1111-1111-1111-000000000001_input0": {
+                "label": {
+                    "value": "Mapper1 - input0"
+                },
+                "view_type": {
+                    "value": "document"
+                }
+            }
+        },
+        "output": {
+            "11111111-1111-1111-1111-000000000005_output0": {
+                "label": {
+                    "value": "Mapper1 - output0"
+                },
+                "view_type": {
+                    "value": "document"
+                }
+            }
+        },
+        "settings": {
+            "error_param_table": {
+                "value": []
+            },
+            "error_pipeline": {
+                "expression": false,
+                "value": null
+            },
+            "imports": {
+                "value": [
+                    {
+                        "as": {
+                            "value": "util"
+                        },
+                        "path": {
+                            "expression": false,
+                            "value": "../../_Common/shared/util.expr"
+                        }
+                    },
+                    {
+                        "as": {
+                            "value": "configIFS"
+                        },
+                        "path": {
+                            "expression": false,
+                            "value": "../../_Common/shared/Config_System_IFS_rest.expr"
+                        }
+                    }
+                ]
+            },
+            "param_table": {
+                "value": [
+                    {
+                        "capture": {
+                            "value": true
+                        },
+                        "data_type": {
+                            "value": "string"
+                        },
+                        "description": {
+                            "value": null
+                        },
+                        "key": {
+                            "value": "select"
+                        },
+                        "required": {
+                            "value": false
+                        },
+                        "value": {
+                            "value": "SerialNo"
+                        }
+                    },
+                    {
+                        "capture": {
+                            "value": true
+                        },
+                        "data_type": {
+                            "value": "string"
+                        },
+                        "description": {
+                            "value": null
+                        },
+                        "key": {
+                            "value": "filter"
+                        },
+                        "required": {
+                            "value": false
+                        },
+                        "value": {
+                            "value": "HandlingUnitId eq 23"
+                        }
+                    },
+                    {
+                        "capture": {
+                            "value": true
+                        },
+                        "data_type": {
+                            "value": "string"
+                        },
+                        "description": {
+                            "value": null
+                        },
+                        "key": {
+                            "value": "account"
+                        },
+                        "required": {
+                            "value": false
+                        },
+                        "value": {
+                            "value": "lib.configIFS.getAccount()"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "render_map": {
+        "default_snaplex": null,
+        "detail_map": {
+            "11111111-1111-1111-1111-000000000000": {
+                "error": {},
+                "grid_x_int": 3,
+                "grid_y_int": 1,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            },
+            "11111111-1111-1111-1111-000000000001": {
+                "error": {},
+                "grid_x_int": 3,
+                "grid_y_int": 2,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            },
+            "11111111-1111-1111-1111-000000000002": {
+                "error": {},
+                "grid_x_int": 4,
+                "grid_y_int": 1,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            },
+            "11111111-1111-1111-1111-000000000003": {
+                "error": {},
+                "grid_x_int": 4,
+                "grid_y_int": 2,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            },
+            "11111111-1111-1111-1111-000000000004": {
+                "error": {},
+                "grid_x_int": 5,
+                "grid_y_int": 1,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            },
+            "11111111-1111-1111-1111-000000000005": {
+                "error": {},
+                "grid_x_int": 5,
+                "grid_y_int": 2,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            },
+            "11111111-1111-1111-1111-000000000006": {
+                "error": {},
+                "grid_x_int": 6,
+                "grid_y_int": 1,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            }
+        },
+        "pan_x_num": 0,
+        "pan_y_num": 0,
+        "scale_ratio": 1
+    },
+    "snap_map": {
+        "11111111-1111-1111-1111-000000000000": {
+            "class_id": "com-snaplogic-snaps-transform-datatransform",
+            "class_version": 4,
+            "instance_id": "11111111-1111-1111-1111-000000000000",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Mapper1"
+                    },
+                    "notes": {
+                        "value": "$getCreditLimitServiceUrl"
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "connTimeout": {
+                        "value": 30
+                    },
+                    "cookiePolicy": {
+                        "expression": false,
+                        "value": null
+                    },
+                    "execution_mode": {
+                        "value": "Disabled"
+                    },
+                    "followRedirects": {
+                        "value": true
+                    },
+                    "hasNext": {
+                        "expression": true,
+                        "value": null
+                    },
+                    "header": {
+                        "value": []
+                    },
+                    "nextUrl": {
+                        "expression": true,
+                        "value": null
+                    },
+                    "normalizeUri": {
+                        "value": true
+                    },
+                    "nullSafeAccess": {
+                        "value": false
+                    },
+                    "paginationInterval": {
+                        "value": 0
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "processArray": {
+                        "value": false
+                    },
+                    "queryParams": {
+                        "value": []
+                    },
+                    "responseEntityType": {
+                        "value": "DEFAULT"
+                    },
+                    "retry": {
+                        "value": 5
+                    },
+                    "retryInterval": {
+                        "value": 3
+                    },
+                    "retryPolicy": {
+                        "value": "Connection errors"
+                    },
+                    "serviceUrl": {
+                        "expression": false,
+                        "value": null
+                    },
+                    "showAllHeaders": {
+                        "value": false
+                    },
+                    "timeout": {
+                        "value": 900
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingRoot": {
+                                "value": "$"
+                            },
+                            "mappingTable": {
+                                "value": [
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "((_filter ? \"&$filter=\" + encodeURIComponent(_filter)  : \"\")+(_select ? \"&$select=\" + encodeURIComponent(_select) : \"\"))"
+                                        },
+                                        "targetPath": {
+                                            "value": "ifsQueryParam"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "lib.configIFS.getPath(\"InventoryPartInStockSet\")"
+                                        },
+                                        "targetPath": {
+                                            "value": "ifsUrl"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "trustAllCerts": {
+                        "value": false
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000001": {
+            "class_id": "com-snaplogic-snaps-transform-datatransform",
+            "class_version": 4,
+            "instance_id": "11111111-1111-1111-1111-000000000001",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Mapper1"
+                    },
+                    "notes": {
+                        "value": "$getCreditLimitServiceUrl"
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "batchSize": {
+                        "value": 1
+                    },
+                    "connTimeout": {
+                        "value": 30
+                    },
+                    "cookiePolicy": {
+                        "expression": false,
+                        "value": null
+                    },
+                    "execLabel": {
+                        "expression": true,
+                        "value": null
+                    },
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "followRedirects": {
+                        "value": true
+                    },
+                    "hasNext": {
+                        "expression": true,
+                        "value": null
+                    },
+                    "header": {
+                        "value": []
+                    },
+                    "nextUrl": {
+                        "expression": true,
+                        "value": null
+                    },
+                    "normalizeUri": {
+                        "value": true
+                    },
+                    "nullSafeAccess": {
+                        "value": false
+                    },
+                    "paginationInterval": {
+                        "value": 0
+                    },
+                    "params": {
+                        "value": []
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "pipeline": {
+                        "expression": false
+                    },
+                    "poolSize": {
+                        "expression": false,
+                        "value": 1
+                    },
+                    "processArray": {
+                        "value": false
+                    },
+                    "queryParams": {
+                        "value": []
+                    },
+                    "responseEntityType": {
+                        "value": "DEFAULT"
+                    },
+                    "retry": {
+                        "value": 5
+                    },
+                    "retryInterval": {
+                        "expression": false,
+                        "value": 3
+                    },
+                    "retryLimit": {
+                        "expression": false,
+                        "value": null
+                    },
+                    "retryPolicy": {
+                        "value": "Connection errors"
+                    },
+                    "reuse": {
+                        "value": false
+                    },
+                    "serviceUrl": {
+                        "expression": false,
+                        "value": null
+                    },
+                    "showAllHeaders": {
+                        "value": false
+                    },
+                    "snaplex": {
+                        "expression": false
+                    },
+                    "snaplexGovernor": {
+                        "value": "SNAPLEX_WITH_PATH"
+                    },
+                    "timeout": {
+                        "expression": false,
+                        "value": 900
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingRoot": {
+                                "value": "$"
+                            },
+                            "mappingTable": {
+                                "value": [
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "((_filter ? \"&$filter=\" + encodeURIComponent(_filter)  : \"\")+(_select ? \"&$select=\" + encodeURIComponent(_select) : \"\"))"
+                                        },
+                                        "targetPath": {
+                                            "value": "ifsQueryParam"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": false,
+                                            "value": "InventoryPartInStockSet"
+                                        },
+                                        "targetPath": {
+                                            "value": "$ifsPathName"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": false,
+                                            "value": "Get"
+                                        },
+                                        "targetPath": {
+                                            "value": "ifsMethod"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "trustAllCerts": {
+                        "value": false
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000002": {
+            "class_id": "com-snaplogic-snaps-transform-datatransform",
+            "class_version": 4,
+            "instance_id": "11111111-1111-1111-1111-000000000002",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Map ifsFinalUrl"
+                    },
+                    "notes": {
+                        "value": "$getCreditLimitServiceUrl"
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "connTimeout": {
+                        "value": 30
+                    },
+                    "cookiePolicy": {
+                        "expression": false,
+                        "value": null
+                    },
+                    "execution_mode": {
+                        "value": "Disabled"
+                    },
+                    "followRedirects": {
+                        "value": true
+                    },
+                    "hasNext": {
+                        "expression": true,
+                        "value": null
+                    },
+                    "header": {
+                        "value": []
+                    },
+                    "nextUrl": {
+                        "expression": true,
+                        "value": null
+                    },
+                    "normalizeUri": {
+                        "value": true
+                    },
+                    "nullSafeAccess": {
+                        "value": false
+                    },
+                    "paginationInterval": {
+                        "value": 0
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "processArray": {
+                        "value": false
+                    },
+                    "queryParams": {
+                        "value": []
+                    },
+                    "responseEntityType": {
+                        "value": "DEFAULT"
+                    },
+                    "retry": {
+                        "value": 5
+                    },
+                    "retryInterval": {
+                        "value": 3
+                    },
+                    "retryPolicy": {
+                        "value": "Connection errors"
+                    },
+                    "serviceUrl": {
+                        "expression": false,
+                        "value": null
+                    },
+                    "showAllHeaders": {
+                        "value": false
+                    },
+                    "timeout": {
+                        "value": 900
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingRoot": {
+                                "value": "$"
+                            },
+                            "mappingTable": {
+                                "value": [
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$ifsUrl +($ifsQueryParam ? (\"?\"+ $ifsQueryParam ).replaceAll('??','?') : \"\")"
+                                        },
+                                        "targetPath": {
+                                            "value": "ifsFinalUrl"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "trustAllCerts": {
+                        "value": false
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000003": {
+            "class_id": "com-snaplogic-snaps-flow-pipeexec",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000003",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "$ifsPathName"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "batchSize": {
+                        "value": 1
+                    },
+                    "execLabel": {
+                        "expression": true,
+                        "value": "$ifsPathName + $ifsQueryParam"
+                    },
+                    "executable_during_suggest": {
+                        "value": true
+                    },
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "loopDocument": {
+                        "expression": true
+                    },
+                    "params": {
+                        "value": [
+                            {
+                                "paramName": {
+                                    "value": "isThrowError"
+                                },
+                                "paramValue": {
+                                    "expression": false,
+                                    "value": "1"
+                                }
+                            },
+                            {
+                                "paramName": {
+                                    "value": "ifsPathName"
+                                },
+                                "paramValue": {
+                                    "expression": true,
+                                    "value": "$ifsPathName"
+                                }
+                            }
+                        ]
+                    },
+                    "pipeline": {
+                        "expression": true,
+                        "value": "lib.util.pipelineLinks.restIFS"
+                    },
+                    "poolSize": {
+                        "expression": false,
+                        "value": 5
+                    },
+                    "retryInterval": {
+                        "expression": false,
+                        "value": null
+                    },
+                    "retryLimit": {
+                        "expression": false,
+                        "value": null
+                    },
+                    "reuse": {
+                        "value": true
+                    },
+                    "snaplex": {
+                        "expression": false
+                    },
+                    "snaplexGovernor": {
+                        "value": "SNAPLEX_WITH_PATH"
+                    },
+                    "timeout": {
+                        "expression": false,
+                        "value": null
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000004": {
+            "class_id": "com-snaplogic-snaps-rest-get",
+            "class_version": 2,
+            "instance_id": "11111111-1111-1111-1111-000000000004",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "expression": true,
+                        "value": "eval(_account)"
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "REST Get"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "connTimeout": {
+                        "value": 30
+                    },
+                    "cookiePolicy": {
+                        "expression": false,
+                        "value": "Ignore Cookies"
+                    },
+                    "executeDuringPreview": {
+                        "value": true
+                    },
+                    "execution_mode": {
+                        "value": "Disabled"
+                    },
+                    "followRedirects": {
+                        "value": true
+                    },
+                    "hasNext": {
+                        "expression": true,
+                        "value": null
+                    },
+                    "header": {
+                        "value": []
+                    },
+                    "nextUrl": {
+                        "expression": true,
+                        "value": null
+                    },
+                    "normalizeUri": {
+                        "value": true
+                    },
+                    "paginationInterval": {
+                        "value": 0
+                    },
+                    "processArray": {
+                        "value": false
+                    },
+                    "queryParams": {
+                        "value": []
+                    },
+                    "rawData": {
+                        "value": false
+                    },
+                    "responseEntityType": {
+                        "value": "DEFAULT"
+                    },
+                    "retry": {
+                        "value": 5
+                    },
+                    "retryInterval": {
+                        "value": 3
+                    },
+                    "retryPolicy": {
+                        "value": "Connection and auth errors (401/403)"
+                    },
+                    "serviceUrl": {
+                        "expression": true,
+                        "value": "$ifsFinalUrl"
+                    },
+                    "showAllHeaders": {
+                        "value": false
+                    },
+                    "timeout": {
+                        "value": 900
+                    },
+                    "trustAllCerts": {
+                        "value": false
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000005": {
+            "class_id": "com-snaplogic-snaps-transform-datatransform",
+            "class_version": 4,
+            "instance_id": "11111111-1111-1111-1111-000000000005",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Mapper1"
+                    },
+                    "notes": {
+                        "value": "$getCreditLimitServiceUrl"
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "nullSafeAccess": {
+                        "value": false
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingRoot": {
+                                "value": "$"
+                            },
+                            "mappingTable": {
+                                "value": [
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "JSON.parse(\n(JSON.stringify($entity)).replaceAll(lib.configIFS.host[lib.util.getOrgName]+lib.configIFS.domain+lib.configIFS.basePath,'elastic.com'+pipe.projectPath+\"/\")\n)"
+                                        },
+                                        "targetPath": {
+                                            "value": "$"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000006": {
+            "class_id": "com-snaplogic-snaps-transform-datatransform",
+            "class_version": 4,
+            "instance_id": "11111111-1111-1111-1111-000000000006",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Mapper1"
+                    },
+                    "notes": {
+                        "value": "$getCreditLimitServiceUrl"
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "execution_mode": {
+                        "value": "Disabled"
+                    },
+                    "nullSafeAccess": {
+                        "value": false
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingRoot": {
+                                "value": "$"
+                            },
+                            "mappingTable": {
+                                "value": [
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "JSON.parse(\n(JSON.stringify($entity)).replaceAll(lib.configIFS.host[lib.util.getOrgName]+lib.configIFS.domain+lib.configIFS.basePath,'elastic.com'+pipe.projectPath+\"/\")\n)"
+                                        },
+                                        "targetPath": {
+                                            "value": "$"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "view_serial": 100
+            }
+        }
+    }
+}
